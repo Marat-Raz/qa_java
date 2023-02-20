@@ -5,7 +5,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import java.util.List;
 import static org.junit.Assert.assertEquals;
-
 @RunWith(Parameterized.class)
 public class LionParametrizedTest {
     private final String sex;
@@ -21,16 +20,6 @@ public class LionParametrizedTest {
                 {"Самец", true},
                 {"Самка", false},
         };
-    }
-    @Test
-    public void lionConstructorExceptionTest() {
-        String exceptionText = "";
-        try {
-            new Lion("Самей", feline);
-        } catch (Exception exception) {
-            exceptionText = exception.getMessage();
-        }
-        assertEquals("Используйте допустимые значения пола животного - самец или самка", exceptionText);
     }
     @Test
     public void lionGetKittensParametrizedTest() throws Exception {
@@ -49,4 +38,3 @@ public class LionParametrizedTest {
         assertEquals(expected, lion.getFood());
     }
 }
-

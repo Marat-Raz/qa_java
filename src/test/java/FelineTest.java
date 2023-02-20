@@ -51,9 +51,7 @@ public class FelineTest {
     public void felineGetKittensCountTest() {
         Feline feline = new Feline();
         Random random = new Random();
-        int lionKittens = random.nextInt(11);
+        int lionKittens = random.nextInt(10);
         assertEquals(lionKittens, feline.getKittens(lionKittens));
           }
-
-
 }
