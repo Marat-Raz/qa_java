@@ -1,7 +1,5 @@
 .gitignore
 .idea
-.target
-target
 # Compiled class file
 *.class
 
